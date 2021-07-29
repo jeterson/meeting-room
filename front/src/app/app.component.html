@@ -1,0 +1,15 @@
+<div class="po-wrapper">
+    <po-toolbar p-title="Meeting Room Manager"></po-toolbar>
+
+    <po-menu [p-menus]="menus">
+        <div *p-menu-header-template>
+            <po-widget>
+                <div class="r-container">
+                    <span class="po-icon po-icon-clock icon"></span>
+                </div>
+            </po-widget>
+        </div>
+    </po-menu>
+
+    <router-outlet></router-outlet>
+</div>

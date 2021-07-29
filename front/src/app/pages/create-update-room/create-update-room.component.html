@@ -1,0 +1,8 @@
+<po-page-default [p-title]="title">
+    <po-dynamic-form [p-load]="onLoadFields.bind(this)" p-auto-focus="name" [p-value]="room" #dynamicForm [p-validate-fields]="validateFields" [p-fields]="fields"></po-dynamic-form>
+    <div class="po-row">
+        <po-button [p-disabled]="dynamicForm.form.invalid === null ? true :  dynamicForm.form.invalid" (p-click)="save()" p-type="primary" p-icon="po-icon-add" class="po-md-3" p-label="Save"></po-button>
+
+        <po-button class="po-md-3" p-label="Cancel" (p-click)="cancel()"></po-button>
+    </div>
+</po-page-default>
